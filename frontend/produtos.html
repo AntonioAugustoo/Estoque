@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque — Produtos</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <span class="logo">estoque<span>/sys</span></span>
+    <nav>
+      <a href="index.html">dashboard</a>
+      <a href="produtos.html" class="active">produtos</a>
+      <a href="categorias.html">categorias</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-header">
+      <p class="page-label">gerenciamento</p>
+      <h1>Produtos</h1>
+    </div>
+
+    <section class="form-section">
+      <h2>Cadastrar Produto</h2>
+      <div class="form">
+        <input type="text" id="nome" placeholder="Nome do produto">
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="number" id="preco" placeholder="Preço" step="0.01">
+        <input type="number" id="quantidade" placeholder="Quantidade">
+        <select id="categoria_id">
+          <option value="">Selecione uma categoria</option>
+        </select>
+        <button onclick="criarProduto()">Cadastrar</button>
+      </div>
+    </section>
+
+    <section class="tabela-section">
+      <h2>Lista de Produtos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    antonio augusto &mdash; matrícula 221 &mdash; inatel c216
+  </footer>
+
+  <script src="static/js/produtos.js"></script>
+</body>
+</html>

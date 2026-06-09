@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque — Categorias</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <span class="logo">estoque<span>/sys</span></span>
+    <nav>
+      <a href="index.html">dashboard</a>
+      <a href="produtos.html">produtos</a>
+      <a href="categorias.html" class="active">categorias</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-header">
+      <p class="page-label">gerenciamento</p>
+      <h1>Categorias e Fornecedores</h1>
+    </div>
+
+    <div class="two-columns">
+
+      <section class="form-section">
+        <h2>Categorias</h2>
+        <div class="form">
+          <input type="text" id="nome-categoria" placeholder="Nome da categoria">
+          <button onclick="criarCategoria()">Cadastrar</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-categorias"></tbody>
+        </table>
+      </section>
+
+      <section class="form-section">
+        <h2>Fornecedores</h2>
+        <div class="form">
+          <input type="text" id="nome-fornecedor" placeholder="Nome do fornecedor">
+          <input type="text" id="contato-fornecedor" placeholder="Contato">
+          <input type="email" id="email-fornecedor" placeholder="E-mail">
+          <button onclick="criarFornecedor()">Cadastrar</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Contato</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-fornecedores"></tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    antonio augusto &mdash; matrícula 221 &mdash; inatel c216
+  </footer>
+
+  <script src="static/js/categorias.js"></script>
+</body>
+</html>

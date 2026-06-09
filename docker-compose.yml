@@ -38,5 +38,13 @@ services:
       api:
         condition: service_started
 
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+
 volumes:
   postgres_data:
