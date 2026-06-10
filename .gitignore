@@ -2,7 +2,10 @@
 __pycache__/
 *.py[cod]
 *.pyo
+
+# Ambiente
 .env
+.env.*
 
 # Virtual environment
 venv/
@@ -14,3 +17,11 @@ venv/
 
 # Docker
 *.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -6,4 +6,3 @@ asyncpg>=0.29.0
 pytest>=7.4.3
 httpx>=0.25.1
 anyio[trio]>=4.0.0
-pytest-asyncio>=0.23.0
