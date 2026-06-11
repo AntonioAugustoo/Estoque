@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="icon" href="/favicon.svg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estoque — Produtos</title>
+  <link rel="icon" href="/favicon.svg">
   <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
@@ -35,6 +35,19 @@
           <option value="">Selecione uma categoria</option>
         </select>
         <button onclick="criarProduto()">Cadastrar</button>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Vincular Fornecedor a Produto</h2>
+      <div class="form">
+        <select id="produto_id_vinculo">
+          <option value="">Selecione um produto</option>
+        </select>
+        <select id="fornecedor_id_vinculo">
+          <option value="">Selecione um fornecedor</option>
+        </select>
+        <button onclick="vincularFornecedor()">Vincular</button>
       </div>
     </section>
 

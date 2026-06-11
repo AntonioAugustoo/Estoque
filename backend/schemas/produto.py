@@ -21,3 +21,4 @@ class Produto(BaseModel):
     preco: float
     quantidade: int
     categoria_id: int | None = None
+    categoria_nome: str | None = None
